@@ -66,9 +66,7 @@ PRODUCT_PACKAGES += \
     curl \
     libbson \
     libcurl \
-    tcpdump \
-    Torch
-
+    tcpdump
 # Charger
 PRODUCT_PACKAGES += charger charger_res_images
 
@@ -89,15 +87,6 @@ PRODUCT_PACKAGES += \
 # Qcom SoftAP
 PRODUCT_PACKAGES += \
     libQWiFiSoftApCfg
-
-# Live Wallpapers
-PRODUCT_PACKAGES += \
-    LiveWallpapers \
-    LiveWallpapersPicker \
-    MagicSmokeWallpapers \
-    HoloSpiralWallpaper \
-    VisualizationWallpapers \
-    librs_jni
 
 # Wifi
 PRODUCT_PACKAGES += \
@@ -141,7 +130,8 @@ PRODUCT_TAGS += dalvik.gc.type-precise
 PRODUCT_PROPERTY_OVERRIDES += \
     debug.egl.hw=1 \
     debug.sf.hw=1 \
-    debug.composition.type=dyn \
+    persist.sys.ui.hw=true \
+    debug.composition.type=gpu \
     persist.hwc.mdpcomp.enable=true \
     debug.mdpcomp.logs=0 \
     debug.enabletr=0

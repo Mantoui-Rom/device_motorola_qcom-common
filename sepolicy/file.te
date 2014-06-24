@@ -4,6 +4,7 @@ type sensors_socket, file_type;
 type camera_socket, file_type;
 
 type sensors_data_file, file_type, data_file_type;
+type camera_data_file, file_type, data_file_type;
 
 # Default type for anything under /firmware
 type radio_efs_file, fs_type;
@@ -16,3 +17,5 @@ type persist_wifi_file, file_type;
 
 # PDS partition
 type pds_file, file_type;
+
+type sysfs_wake_lock, file_type;
