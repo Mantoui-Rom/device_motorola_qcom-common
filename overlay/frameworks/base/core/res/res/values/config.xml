@@ -105,7 +105,7 @@
     <bool name="config_showNavigationBar">true</bool>
 
     <!-- Minimum screen brightness allowed by the power manager. -->
-    <integer name="config_screenBrightnessDim">5</integer>
+    <integer name="config_screenBrightnessDim">1</integer>
 
     <!-- Array of light sensor LUX values to define our levels for auto backlight brightness support.
                   The N entries of this array define N + 1 zones as follows:
