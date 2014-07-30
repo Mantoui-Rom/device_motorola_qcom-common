@@ -88,6 +88,10 @@ PRODUCT_PACKAGES += \
 PRODUCT_PACKAGES += \
     libQWiFiSoftApCfg
 
+# Live Wallpapers
+PRODUCT_PACKAGES += \
+    librs_jni
+
 # Wifi
 PRODUCT_PACKAGES += \
     p2p_supplicant_overlay.conf \
@@ -122,6 +126,10 @@ PRODUCT_PACKAGES += \
 # Scripts
 PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/scripts/mount_pds.sh:system/bin/mount_pds.sh
+
+# GPS configuration
+PRODUCT_COPY_FILES += \
+    $(LOCAL_PATH)/config/gps.conf:system/etc/gps.conf
 
 # We have enough storage space to hold precise GC data
 PRODUCT_TAGS += dalvik.gc.type-precise
