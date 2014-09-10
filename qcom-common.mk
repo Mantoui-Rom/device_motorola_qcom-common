@@ -138,8 +138,11 @@ PRODUCT_TAGS += dalvik.gc.type-precise
 PRODUCT_PROPERTY_OVERRIDES += \
     debug.egl.hw=1 \
     debug.sf.hw=1 \
+    persist.sys.ui.hw=true \
+    debug.composition.type=gpu \
     persist.hwc.mdpcomp.enable=true \
-    debug.mdpcomp.logs=0
+    debug.mdpcomp.logs=0 \
+    debug.enabletr=0
 
 # QCOM Display
 PRODUCT_PACKAGES += \
